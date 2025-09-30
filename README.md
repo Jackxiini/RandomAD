@@ -61,15 +61,12 @@ If you use this code in your research/work, please cite our paper:
 Coming soon
 ```
 
-## 📝 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
 ## 🙏 Acknowledgments
 
 - MiniRocket implementation based on the original paper
 - UCR anomaly detection archive for benchmarking
 - ECML-PKDD conference for accepting our work
+
 
 
 
