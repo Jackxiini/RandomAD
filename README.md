@@ -13,7 +13,7 @@ This is the implementation of the ECML-PKDD 2025 paper [**RandomAD: A Random Ker
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/Jackxiini/RandomAD
 cd RandomAD_code
 ```
 
@@ -72,5 +72,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - MiniRocket implementation based on the original paper
 - UCR anomaly detection archive for benchmarking
 - ECML-PKDD conference for accepting our work
+
 
 
