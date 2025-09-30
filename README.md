@@ -65,7 +65,7 @@ Coming soon
 
 - MiniRocket implementation based on the original paper
 - UCR anomaly detection archive for benchmarking
-- ECML-PKDD conference for accepting our work
+
 
 
 
