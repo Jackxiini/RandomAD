@@ -24,9 +24,9 @@ pip install -r requirements.txt
 
 ## 🎯 Usage
 
-### Basic Usage
+### UCR anomaly archive
 
-Run RandomAD on UCR dataset:
+Run RandomAD on UCR anomaly archive:
 ```bash
 python RandomAD.py --dataset UCR --n_kernel 1000 --rate 0.5
 ```
@@ -72,6 +72,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - MiniRocket implementation based on the original paper
 - UCR anomaly detection archive for benchmarking
 - ECML-PKDD conference for accepting our work
+
 
 
 
