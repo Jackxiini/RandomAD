@@ -22,11 +22,10 @@ argparser.add_argument('--alpha', type=float, default=0.5)
 argparser.add_argument('--beta', type=float, default=0.5)
 argparser.add_argument('--rate', type=float, default=0.5)
 argparser.add_argument('--dataset', type=str, default='UCR')
-argparser.add_argument('--k_neighbors', type=int, default=3)
 args = argparser.parse_args()
 
 dataset = args.dataset
-k_neighbors = args.k_neighbors
+k_neighbors = 3
 model = 'RandomAD'
 
 def calculate_window_size(data):
