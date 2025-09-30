@@ -4,12 +4,12 @@ This is the implementation of the ECML-PKDD 2025 paper [**RandomAD: A Random Ker
 
 **RandomAD** is a novel anomaly detection method for time series data that combines random convolutional kernels with kernel selection mechanism and anomaly filtering. The method can automatically select optimal window size for detection without manual parameter tuning, providing an efficient and effective approach to detecting anomalies in univariate time series.
 
-## 📋 Requirements
+## Requirements
 
 - Python 3.8+
 - See `requirements.txt` for detailed dependencies
 
-## 🛠️ Installation
+## Installation
 
 1. Clone the repository:
 ```bash
@@ -22,7 +22,7 @@ cd RandomAD_code
 pip install -r requirements.txt
 ```
 
-## 🎯 Usage
+## Try our method
 
 Run RandomAD on [UCR anomaly archive](https://www.cs.ucr.edu/~eamonn/time_series_data_2018/UCR_TimeSeriesAnomalyDatasets2021.zip):
 ```bash
@@ -48,12 +48,12 @@ Kernel selection rate: 0.5
 Average Accuracy Score: 0.85
 ```
 
-## 📊 Supported Datasets
+## Supported Datasets
 
 - **UCR**: UCR Time Series Anomaly Detection datasets
 - **Custom**: User-defined datasets (implement your own loader)
 
-## 🎓 Citation
+## Citation
 
 If you use this code in your research/work, please cite our paper:
 
@@ -61,11 +61,12 @@ If you use this code in your research/work, please cite our paper:
 Coming soon
 ```
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - MiniRocket implementation based on the original paper
 - UCR anomaly detection archive for benchmarking
 - ECML-PKDD conference for accepting our work
+
 
 
 
