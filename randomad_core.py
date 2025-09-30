@@ -6,6 +6,7 @@ from scipy.stats import entropy
 from joblib import Parallel, delayed
 from minirocket import fit, transform
 
+
 def normalize_subsequences(subsequences):
     """Normalize each subsequence individually."""
     means = np.mean(subsequences, axis=1, keepdims=True)
@@ -26,7 +27,7 @@ def KNN(k_neighbors, train_windows, test_windows):
     distances, _ = nbrs.kneighbors(test_windows)
     return distances.mean(axis=1)
 
-def MiniRocket_KNN_fit(train_windows, num_features=100):
+def MiniRocket_fit(train_windows, num_features=100):
     train_windows = train_windows.astype(np.float32)
     return fit(train_windows, num_features=num_features)
 
@@ -77,7 +78,7 @@ def calculate_kss_parallel(train_windows, keep_features_ratio=0.5, num_samples=1
     keep_indices = np.argsort(kss)[:num_keep]
     return keep_indices
 
-def MiniRocket_mask(para, train_windows, keep_features_ratio=0.5, num_samples=100, alpha=0.5, beta=0.5):
+def RandomAD_mask(para, train_windows, keep_features_ratio=0.5, num_samples=100, alpha=0.5, beta=0.5):
     train_windows = train_windows.astype(np.float32)
     train_windows = transform(train_windows, para)
     filter_type = 'kss'
@@ -101,7 +102,7 @@ def remove_masked_columns(data, mask):
     keep_indices = np.where(mask != 0)[0]
     return data[:, keep_indices]
 
-def RandomAD(para, mask, k_neighbors, train_windows, test_windows=None, use_pca=False, pca_variance_ratio=0.8):
+def RandomAD_run(para, mask, k_neighbors, train_windows, test_windows=None, use_pca=False, pca_variance_ratio=0.8):
     train_windows = train_windows.astype(np.float32)
     if test_windows is not None:
         test_windows = test_windows.astype(np.float32)
@@ -139,4 +140,3 @@ def normalize2(a, min_a=None, max_a=None):
 def normalize3(a, min_a=None, max_a=None):
     if min_a is None: min_a, max_a = np.min(a, axis=0), np.max(a, axis=0)
     return (a - min_a) / (max_a - min_a + 0.0001), min_a, max_a
-

@@ -3,18 +3,19 @@ import pandas as pd
 import time
 import argparse
 import os
-from scipy.signal import find_peaks, correlate
-from utils import data_profile, data_sets_names, data_set_keys
+#from utils import data_profile, data_sets_names, data_set_keys
 from randomad_core import (
     KNN,
     KNN_norm,
-    MiniRocket_KNN_fit,
-    MiniRocket_mask,
-    RandomAD as RandomAD_run,
+    MiniRocket_fit,
+    RandomAD_mask,
+    RandomAD_run,
 )
 
 import warnings
 warnings.filterwarnings("ignore")
+
+from scipy.signal import find_peaks, correlate
 
 argparser = argparse.ArgumentParser()
 argparser.add_argument('--n_kernel', type=int, default=1000)
@@ -146,8 +147,8 @@ for filename in file_list:
             num_features = args.n_kernel
             use_pca = False
             pca_variance_ratio = 0.95
-            para = MiniRocket_KNN_fit(train_windows, num_features=num_features)
-            mask = MiniRocket_mask(para, train_windows, keep_features_ratio=args.rate, num_samples=100, alpha=args.alpha, beta=args.beta)
+            para = MiniRocket_fit(train_windows, num_features=num_features)
+            mask = RandomAD_mask(para, train_windows, keep_features_ratio=args.rate, num_samples=100, alpha=args.alpha, beta=args.beta)
             train_distances = RandomAD_run(para, mask, k_neighbors, train_windows, use_pca=use_pca)
             test_distances = RandomAD_run(para, mask, k_neighbors, train_windows, test_windows, use_pca=use_pca)
 
