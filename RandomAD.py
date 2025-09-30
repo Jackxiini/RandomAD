@@ -3,6 +3,7 @@ import pandas as pd
 import time
 import argparse
 import os
+from scipy.signal import find_peaks, correlate
 from utils import data_profile, data_sets_names, data_set_keys
 from randomad_core import (
     KNN,
@@ -14,51 +15,6 @@ from randomad_core import (
 
 import warnings
 warnings.filterwarnings("ignore")
-
-from scipy.signal import find_peaks, correlate
-
-# Print package versions
-def print_package_versions():
-    print("=== Package Versions ===")
-    try:
-        print(f"numpy: {np.__version__}")
-    except:
-        print("numpy: version not available")
-    
-    try:
-        import sklearn
-        print(f"scikit-learn: {sklearn.__version__}")
-    except:
-        print("scikit-learn: version not available")
-    
-    try:
-        print(f"pandas: {pd.__version__}")
-    except:
-        print("pandas: version not available")
-    
-    try:
-        import joblib
-        print(f"joblib: {joblib.__version__}")
-    except:
-        print("joblib: version not available")
-    
-    try:
-        import scipy
-        print(f"scipy: {scipy.__version__}")
-    except:
-        print("scipy: version not available")
-    
-    try:
-        import numba
-        print(f"numba: {numba.__version__}")
-    except:
-        print("numba: version not available")
-    
-    print("========================")
-
-# Print versions at startup
-print_package_versions()
-
 
 argparser = argparse.ArgumentParser()
 argparser.add_argument('--n_kernel', type=int, default=1000)
