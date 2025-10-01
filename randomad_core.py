@@ -5,7 +5,8 @@ from sklearn.metrics import mutual_info_score
 from scipy.stats import entropy
 from joblib import Parallel, delayed
 from minirocket import fit, transform
-
+import warnings
+warnings.filterwarnings("ignore")
 
 def normalize_subsequences(subsequences):
     """Normalize each subsequence individually."""
