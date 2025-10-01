@@ -45,7 +45,7 @@ Best Window Size: 20
 Time taken: 45.32 seconds
 Kernel Number: 1000
 Kernel selection rate: 0.5
-Average Accuracy Score: 1.00
+Accuracy Score: 1.00
 ```
 
 ## Supported Datasets
@@ -65,6 +65,7 @@ Coming soon
 
 - MiniRocket implementation based on the original paper
 - UCR anomaly detection archive for benchmarking
+
 
 
 
