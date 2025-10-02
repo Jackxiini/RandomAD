@@ -50,7 +50,7 @@ Accuracy Score: 1
 
 ## Citation
 
-If you use this code in your research/work, please cite our paper:
+If you use our work in your research/work, please cite our paper:
 
 ```bibtex
 Coming soon
@@ -60,6 +60,7 @@ Coming soon
 
 - MiniRocket implementation based on the original paper
 - UCR anomaly detection archive for benchmarking
+
 
 
 
