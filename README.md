@@ -31,7 +31,7 @@ python RandomAD.py --dataset UCR --n_kernel 1000 --rate 0.5
 
 ### Parameters
 
-- `--dataset`: Dataset type (UCR, custom)
+- `--dataset`: Dataset name (UCR, custom)
 - `--n_kernel`: Number of random kernels (default: 1000)
 - `--rate`: Feature selection ratio (default: 0.5)
 - `--alpha`: Mutual information weight in KSS (default: 0.5)
@@ -60,6 +60,7 @@ Coming soon
 
 - MiniRocket implementation based on the original paper
 - UCR anomaly detection archive for benchmarking
+
 
 
 
