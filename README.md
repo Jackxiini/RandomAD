@@ -48,11 +48,6 @@ Kernel selection rate: 0.5
 Accuracy Score: 1
 ```
 
-## Supported Datasets
-
-- **UCR**: UCR Time Series Anomaly Detection datasets
-- **Custom**: User-defined datasets (implement your own loader)
-
 ## Citation
 
 If you use this code in your research/work, please cite our paper:
@@ -65,6 +60,7 @@ Coming soon
 
 - MiniRocket implementation based on the original paper
 - UCR anomaly detection archive for benchmarking
+
 
 
 
