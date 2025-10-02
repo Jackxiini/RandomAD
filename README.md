@@ -29,7 +29,7 @@ Run RandomAD on [UCR anomaly archive](https://www.cs.ucr.edu/~eamonn/time_series
 python RandomAD.py --dataset UCR --n_kernel 1000 --rate 0.5
 ```
 
-### --Parameters
+### **Parameters**
 
 - `--dataset`: Dataset type (UCR, custom)
 - `--n_kernel`: Number of random kernels (default: 1000)
@@ -37,7 +37,7 @@ python RandomAD.py --dataset UCR --n_kernel 1000 --rate 0.5
 - `--alpha`: Mutual information weight in KSS (default: 0.5)
 - `--beta`: Entropy weight in KSS (default: 0.5)
 
-### --Example Output
+### **Example Output**
 
 ```
 Window Sizes: [10 20 30 40]
@@ -60,6 +60,7 @@ Coming soon
 
 - MiniRocket implementation based on the original paper
 - UCR anomaly detection archive for benchmarking
+
 
 
 
