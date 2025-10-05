@@ -53,13 +53,22 @@ Accuracy Score: 1
 If you use our work in your research/work, please cite our paper:
 
 ```bibtex
-
+@InProceedings{xi2025random,
+author="Xi, Wenjie and Lin, Jessica",
+editor="Ribeiro, Rita P.
+title="RandomAD: A Random Kernel-Based Anomaly Detector for Time Series",
+booktitle="Machine Learning and Knowledge Discovery in Databases. Research Track",
+year="2026",
+publisher="Springer Nature Switzerland",
+pages="159--175",
+}
 ```
 
 ## Acknowledgments
 
 - MiniRocket implementation based on the original paper
 - UCR anomaly detection archive for benchmarking
+
 
 
 
