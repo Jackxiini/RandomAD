@@ -53,13 +53,14 @@ Accuracy Score: 1
 If you use our work in your research/work, please cite our paper:
 
 ```bibtex
-Coming soon
+Xi, W., Lin, J. (2026). RandomAD: A Random Kernel-Based Anomaly Detector for Time Series. In: Ribeiro, R.P., et al. Machine Learning and Knowledge Discovery in Databases. Research Track. ECML PKDD 2025. Lecture Notes in Computer Science(), vol 16013. Springer, Cham. https://doi.org/10.1007/978-3-032-05962-8_10
 ```
 
 ## Acknowledgments
 
 - MiniRocket implementation based on the original paper
 - UCR anomaly detection archive for benchmarking
+
 
 
 
