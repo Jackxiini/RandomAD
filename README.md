@@ -1,6 +1,6 @@
 # RandomAD: A Random Kernel-based Anomaly Detector for Time Series
 
-This is the implementation of the ECML-PKDD 2025 paper [**RandomAD: A Random Kernel-based Anomaly Detector for Time Series**](https://ecmlpkdd-storage.s3.eu-central-1.amazonaws.com/preprints/2025/research/preprint_ecml_pkdd_2025_research_95.pdf).
+This is the implementation of the ECML-PKDD 2025 paper [**RandomAD: A Random Kernel-based Anomaly Detector for Time Series**](https://link.springer.com/chapter/10.1007/978-3-032-05962-8_10).
 
 **RandomAD** is a novel anomaly detection method for time series data that combines random convolutional kernels with kernel selection mechanism and anomaly filtering. The method can automatically select optimal window size for detection without manual parameter tuning, providing an efficient and effective approach to detecting anomalies in univariate time series.
 
@@ -68,6 +68,7 @@ pages="159--175",
 
 - MiniRocket implementation based on the original paper
 - UCR anomaly detection archive for benchmarking
+
 
 
 
